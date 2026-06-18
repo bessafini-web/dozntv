@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Simple, transparent pricing. Choose between our 6-month and 12-month plans. No hidden fees, no contracts.">
+  <meta property="og:title" content="Pricing — [BRAND_NAME]">
+  <meta property="og:type" content="website">
+  <title>Pricing — [BRAND_NAME]</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/design-system.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <style>
+    .page-hero {
+      background: url('bg.jpg') center/cover no-repeat !important;
+      position: relative;
+    }
+    .page-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.75);
+      z-index: 0;
+    }
+    .page-hero > * {
+      position: relative;
+      z-index: 1;
+    }
+    .page-hero h1 {
+      color: #ffffff;
+      text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
+    }
+    .page-hero p {
+      color: rgba(255, 255, 255, 0.88);
+    }
+  </style>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Organization","name":"[BRAND_NAME]","url":"https://[DOMAIN]"}
+  </script>
+</head>
+<body>
+<div id="header-placeholder"></div>
+<main id="main">
+
+  <!-- Hero -->
+  <section class="page-hero">
+    <div class="orb-container" aria-hidden="true">
+      <div class="orb orb--green" style="top:50%;left:50%;transform:translate(-50%,-50%);"></div>
+    </div>
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-sep" aria-hidden="true">/</span>
+        <span>Pricing</span>
+      </nav>
+      <h1 data-i18n="pricing_title">Simple, transparent pricing</h1>
+      <p data-i18n="pricing_sub">No hidden fees. No contracts. Cancel anytime.</p>
+    </div>
+  </section>
+
+  <!-- Plans -->
+  <section class="section">
+    <div class="container">
+      <div class="currency-row reveal">
+        <label for="currency-sel-pricing" class="caption text-muted">Currency:</label>
+        <select class="currency-selector form-control" id="currency-sel-pricing" style="width:auto;">
+          <option value="USD">USD ($)</option>
+          <option value="EUR">EUR (€)</option>
+          <option value="GBP">GBP (£)</option>
+          <option value="CAD">CAD (C$)</option>
+        </select>
+      </div>
+      <!-- VIP / PRO Server Quality Toggle -->
+      <div class="quality-toggle-wrap reveal">
+        <span class="quality-toggle-label">Choose your server quality:</span>
+        <div class="quality-toggle" role="group" aria-label="Server quality selector">
+          <button class="quality-tab active" data-quality="pro" aria-pressed="true">
+            <span class="quality-tab-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></span> PRO Server
+          </button>
+          <button class="quality-tab vip" data-quality="vip" aria-pressed="false">
+            <span class="quality-tab-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 4l3 12h14l3-12-6 7-4-7-4 7-6-7z"/><path d="M5 20h14"/></svg></span> VIP Server
+          </button>
+        </div>
+        <div class="quality-desc-row">
+          <span class="quality-desc-item active-desc" data-quality="pro"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:1em;height:1em;vertical-align:middle;margin-right:0.3em;"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> PRO — HD / Full HD · Stable &amp; fast · Best value</span>
+          <span class="quality-desc-item" data-quality="vip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:1em;height:1em;vertical-align:middle;margin-right:0.3em;"><path d="M2 4l3 12h14l3-12-6 7-4-7-4 7-6-7z"/><path d="M5 20h14"/></svg> VIP — 4K UHD · Ultra-low latency · Premium dedicated servers</span>
+        </div>
+      </div>
+
+      <!-- Payment methods bar -->
+      <div class="payment-bar reveal">
+        <span class="payment-bar-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:1em;height:1em;vertical-align:middle;margin-right:0.3em;"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Secure payment:</span>
+        <div class="payment-bar-methods">
+          <div class="payment-method-pill">
+            <span class="payment-method-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg></span>
+            <span>Visa / Mastercard</span>
+          </div>
+          <div class="payment-method-pill">
+            <span class="payment-method-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M9 8h5a3 3 0 0 1 0 6H9V8z"/><line x1="9" y1="8" x2="9" y2="16"/></svg></span>
+            <span>PayPal</span>
+          </div>
+          <div class="payment-method-pill">
+            <span class="payment-method-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.5 2H14a3 3 0 0 1 0 6H9.5V2z"/><path d="M9.5 8H15a3 3 0 0 1 0 6H9.5V8z"/><line x1="6" y1="2" x2="9.5" y2="2"/><line x1="6" y1="14" x2="9.5" y2="14"/><line x1="8" y1="1" x2="8" y2="3"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="8" y1="13" x2="8" y2="15"/></svg></span>
+            <span>Crypto</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pricing-page-cards pricing-3col reveal">
+        <!-- 3 Months -->
+        <div class="card pricing-card">
+          <span class="quality-server-label badge badge--green">PRO Server</span>
+          <div class="plan-name">3 Months</div>
+          <div class="plan-price-wrap">
+            <span class="plan-price" data-price-3m data-base-3m="[PRICE_3M_PRO]">$[PRICE_3M_PRO]</span>
+            <span class="plan-per text-muted">/total</span>
+          </div>
+          <ul class="plan-features">
+            <li>✓ Full channel access (10,000+)</li>
+            <li>✓ HD &amp; Full HD quality</li>
+            <li>✓ 1 simultaneous device</li>
+            <li>✓ EPG program guide</li>
+            <li>✓ VOD library access</li>
+            <li>✓ Anti-freeze technology</li>
+            <li>✓ Email support</li>
+            <li>✓ Free setup assistance</li>
+            <li>✓ Instant activation</li>
+          </ul>
+          <button class="btn btn--secondary w-full plan-select-btn" data-plan="3 Months" data-price="[PRICE_3M_PRO]">Get Started</button>
+          <p class="caption text-dim text-center mt-4">One-time payment · 3 months</p>
+        </div>
+
+        <!-- 6 Months -->
+        <div class="card card--featured pricing-card">
+          <span class="badge badge--green pricing-badge" data-i18n="plan_popular">Most Popular</span>
+          <span class="quality-server-label badge badge--green" style="margin-top:0.5rem;">PRO Server</span>
+          <div class="plan-name" data-i18n="plan_6m">6 Months</div>
+          <div class="plan-price-wrap">
+            <span class="plan-price" data-price-6m data-base-6m="[PRICE_6M_PRO]">$[PRICE_6M_PRO]</span>
+            <span class="plan-per text-muted">/total</span>
+          </div>
+          <ul class="plan-features">
+            <li>✓ Full channel access (10,000+)</li>
+            <li>✓ HD, Full HD &amp; 4K quality</li>
+            <li>✓ Up to 2 simultaneous devices</li>
+            <li>✓ EPG program guide</li>
+            <li>✓ VOD library access</li>
+            <li>✓ Anti-freeze technology</li>
+            <li>✓ 24/7 customer support</li>
+            <li>✓ Free setup assistance</li>
+            <li>✓ Instant activation</li>
+          </ul>
+          <button class="btn btn--primary w-full plan-select-btn" data-plan="6 Months" data-price="[PRICE_6M_PRO]" data-i18n="plan_cta">Get Started</button>
+          <p class="caption text-dim text-center mt-4">One-time payment · 6 months</p>
+        </div>
+
+        <!-- 12 Months -->
+        <div class="card card--gold pricing-card">
+          <span class="badge badge--gold pricing-badge" data-i18n="plan_best">Best Value</span>
+          <span class="quality-server-label badge badge--green" style="margin-top:0.5rem;">PRO Server</span>
+          <div class="plan-name" data-i18n="plan_12m">12 Months</div>
+          <div class="plan-price-wrap">
+            <span class="plan-price" data-price-12m data-base-12m="[PRICE_12M_PRO]">$[PRICE_12M_PRO]</span>
+            <span class="plan-per text-muted">/total</span>
+          </div>
+          <ul class="plan-features">
+            <li>✓ Everything in 6 Months</li>
+            <li>✓ Up to 4 simultaneous devices</li>
+            <li>✓ Priority 24/7 support</li>
+            <li>✓ Catch-up / Replay (7 days)</li>
+            <li>✓ Extended VOD library</li>
+            <li>✓ Premium quality guarantee</li>
+            <li>✓ Dedicated account manager</li>
+            <li>✓ Early access to new features</li>
+            <li class="plan-save text-gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:1em;height:1em;vertical-align:middle;margin-right:0.25em;"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="18" width="12" height="4"/></svg> Best value — save more per month</li>
+          </ul>
+          <button class="btn btn--primary w-full plan-select-btn" data-plan="12 Months" data-price="[PRICE_12M_PRO]" data-i18n="plan_cta">Get Started</button>
+          <p class="caption text-dim text-center mt-4">One-time payment · 12 months</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Table -->
+  <section class="section section--dark">
+    <div class="container">
+      <div class="section-heading reveal">
+        <h2>Full Feature Comparison</h2>
+        <p>See exactly what's included in each plan</p>
+      </div>
+      <div class="reveal" style="overflow-x:auto;">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th style="text-align:left;">Feature</th>
+              <th>3 Months</th>
+              <th>6 Months</th>
+              <th>12 Months</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Channel count</td><td>18,000+</td><td>18,000+</td><td>18,000+</td></tr>
+            <tr><td>Server quality</td><td>PRO or VIP</td><td>PRO or VIP</td><td>PRO or VIP</td></tr>
+            <tr><td>Video quality</td><td>HD / FHD / 4K</td><td>HD / FHD / 4K</td><td>HD / FHD / 4K</td></tr>
+            <tr><td>Simultaneous devices</td><td>1</td><td>2</td><td>4</td></tr>
+            <tr><td>EPG Program Guide</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td></tr>
+            <tr><td>VOD / On-demand library</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td></tr>
+            <tr><td>Anti-freeze technology</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td></tr>
+            <tr><td>Free setup assistance</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td></tr>
+            <tr><td>24/7 support</td><td class="cross">✕</td><td class="check">✓</td><td class="check">✓</td></tr>
+            <tr><td>Catch-up / Replay (7 days)</td><td class="cross">✕</td><td class="cross">✕</td><td class="check">✓</td></tr>
+            <tr><td>Priority support</td><td class="cross">✕</td><td class="cross">✕</td><td class="check">✓</td></tr>
+            <tr><td>Dedicated account manager</td><td class="cross">✕</td><td class="cross">✕</td><td class="check">✓</td></tr>
+            <tr><td>Value</td><td>—</td><td class="text-green">Popular</td><td class="text-gold">Best value</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Free Trial CTA -->
+  <section class="section">
+    <div class="container" style="max-width:700px;">
+      <div class="card text-center reveal" style="border-color:rgba(0,200,83,0.4);background:linear-gradient(135deg,rgba(0,200,83,0.06) 0%,transparent 100%);">
+        <div style="font-size:3rem;margin-bottom:1rem;display:flex;align-items:center;justify-content:center;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:3rem;height:3rem;color:var(--green);"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg></div>
+        <h2 style="font-size:1.75rem;margin-bottom:0.75rem;">Try 24 Hours — Completely Free</h2>
+        <p class="text-muted" style="margin-bottom:2rem;max-width:480px;margin-left:auto;margin-right:auto;">Full access to all 18,000+ channels and 60,000+ VOD titles. No credit card. No commitment. Cancel anytime.</p>
+        <div class="flex gap-4 justify-center flex-wrap">
+          <a href="#" class="btn btn--primary btn--lg" data-whatsapp><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:1.1em;height:1.1em;"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg> Claim Free Trial via WhatsApp</a>
+          <a href="contact.html" class="btn btn--secondary btn--lg">Send a Request</a>
+        </div>
+        <div class="flex gap-6 justify-center mt-6 flex-wrap">
+          <span style="font-size:0.8125rem;color:var(--text-tertiary);">✓ No credit card needed</span>
+          <span style="font-size:0.8125rem;color:var(--text-tertiary);">✓ Instant activation</span>
+          <span style="font-size:0.8125rem;color:var(--text-tertiary);">✓ All features included</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guarantee -->
+  <section class="section section--dark">
+    <div class="container">
+      <div class="guarantee-section reveal">
+        <span class="guarantee-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+        <h3>Satisfaction Guarantee</h3>
+        <p>Not completely satisfied? Contact our support team within the first few days and we'll work with you to resolve any issue or make it right. We stand behind the quality of our service.</p>
+        <div class="flex gap-4 justify-center mt-6 flex-wrap">
+          <a href="contact.html" class="btn btn--primary">Contact Support</a>
+          <a href="trust.html"   class="btn btn--secondary">Our Trust Promise</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing FAQ -->
+  <section class="section section--dark">
+    <div class="container">
+      <div class="section-heading reveal">
+        <h2>Pricing Questions</h2>
+      </div>
+      <div class="accordion reveal" style="max-width:48rem;margin:0 auto;">
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">What happens when my plan expires?<span class="accordion-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+          <div class="accordion-content"><p>You'll receive a reminder before your plan expires. Simply renew and your service continues without interruption. Your settings and preferences are saved.</p></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">Can I upgrade from 6 months to 12 months?<span class="accordion-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+          <div class="accordion-content"><p>Yes. Contact our support team and we'll arrange an upgrade. Any remaining time on your current plan will be factored into the new subscription.</p></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">What payment methods do you accept?<span class="accordion-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+          <div class="accordion-content"><p>We accept Visa, Mastercard, American Express, PayPal, and various cryptocurrency options. All transactions are encrypted and secure.</p></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">Is there a free trial available?<span class="accordion-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+          <div class="accordion-content"><p>Yes! We offer a <strong>24-hour free trial</strong> — full access to all channels, VOD, and features. No credit card required. Contact us via WhatsApp or the order form to activate your trial.</p></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">Can I use it on multiple devices at the same time?<span class="accordion-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></span></button>
+          <div class="accordion-content"><p>The 6-month plan supports 2 simultaneous streams. The 12-month plan supports up to 4. Perfect for families or multiple rooms.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Help chooser -->
+  <section class="section">
+    <div class="container" style="max-width:500px;">
+      <div class="card text-center reveal">
+        <div style="font-size:2rem;margin-bottom:1rem;display:flex;align-items:center;justify-content:center;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:2.5rem;height:2.5rem;color:var(--green);"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17" stroke-width="2.5"/></svg></div>
+        <h3 style="margin-bottom:0.75rem;">Not sure which plan?</h3>
+        <p class="text-muted" style="margin-bottom:1.5rem;">Our team will help you choose the right plan for your needs. No pressure, just honest advice.</p>
+        <div class="flex gap-4 justify-center flex-wrap">
+          <a href="#" class="btn btn--primary" data-whatsapp>Chat on WhatsApp</a>
+          <a href="contact.html" class="btn btn--secondary">Send a message</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+<div id="footer-placeholder"></div>
+<script src="js/config.js"></script>
+<script src="js/translations.js"></script>
+<script src="js/partials.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

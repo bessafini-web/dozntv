@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Complete your subscription order — [BRAND_NAME] secure checkout.">
+  <title>Checkout — [BRAND_NAME]</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/design-system.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+<div id="header-placeholder"></div>
+<main id="main">
+
+  <section class="page-hero" style="padding-bottom:2rem;">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="pricing.html">Pricing</a><span class="breadcrumb-sep">/</span><span>Checkout</span>
+      </nav>
+      <h1>Complete Your Order</h1>
+      <p>Secure checkout. Instant activation after payment.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:2rem;">
+    <div class="container">
+      <div class="checkout-layout reveal">
+
+        <!-- Checkout form -->
+        <div>
+          <div class="card checkout-card">
+            <h2>Account Details</h2>
+            <form class="ajax-form" id="checkout-form" novalidate>
+              <input type="text" class="hp-field" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+              <div class="grid grid-2" style="gap:1rem;margin-bottom:1rem;">
+                <div class="form-group">
+                  <label class="form-label" for="checkout-first">First name *</label>
+                  <input type="text" id="checkout-first" class="form-control" placeholder="First name" required autocomplete="given-name">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="checkout-last">Last name *</label>
+                  <input type="text" id="checkout-last" class="form-control" placeholder="Last name" required autocomplete="family-name">
+                </div>
+              </div>
+              <div class="form-group" style="margin-bottom:1rem;">
+                <label class="form-label" for="checkout-email">Email *</label>
+                <input type="email" id="checkout-email" class="form-control" placeholder="Your email — credentials will be sent here" required autocomplete="email">
+              </div>
+              <div class="form-group" style="margin-bottom:1.5rem;">
+                <label class="form-label" for="checkout-device">Primary device</label>
+                <select id="checkout-device" class="form-control">
+                  <option value="">— Select your main device —</option>
+                  <option>Smart TV</option>
+                  <option>Amazon Fire Stick</option>
+                  <option>Android Phone / Tablet</option>
+                  <option>iPhone / iPad</option>
+                  <option>Windows PC</option>
+                  <option>Mac</option>
+                  <option>MAG Device</option>
+                  <option>Android TV Box</option>
+                </select>
+              </div>
+            </form>
+          </div>
+
+          <div class="card checkout-card mt-6">
+            <h2>Payment Method</h2>
+            <div class="payment-methods">
+              <button class="payment-method-btn active" type="button">💳 Card</button>
+              <button class="payment-method-btn" type="button">🅿 PayPal</button>
+              <button class="payment-method-btn" type="button">₿ Crypto</button>
+            </div>
+            <div class="callout">
+              <strong>Payment integration coming soon.</strong> This is a checkout placeholder — the architecture is ready for Stripe/PayPal integration. Contact us to complete your order manually for now.
+            </div>
+            <div class="grid grid-2 mt-6" style="gap:1rem;">
+              <div class="form-group">
+                <label class="form-label" for="card-num">Card number</label>
+                <input type="text" id="card-num" class="form-control" placeholder="1234 5678 9012 3456" maxlength="19" autocomplete="cc-number">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="card-name">Name on card</label>
+                <input type="text" id="card-name" class="form-control" placeholder="Full name" autocomplete="cc-name">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="card-exp">Expiry</label>
+                <input type="text" id="card-exp" class="form-control" placeholder="MM / YY" maxlength="7" autocomplete="cc-exp">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="card-cvc">CVC</label>
+                <input type="text" id="card-cvc" class="form-control" placeholder="CVC" maxlength="4" autocomplete="cc-csc">
+              </div>
+            </div>
+            <button class="btn btn--primary w-full btn--lg mt-6" style="margin-top:1.5rem;" onclick="alert('Payment system coming soon. Please contact support to complete your order.');">
+              Complete Purchase
+            </button>
+          </div>
+        </div>
+
+        <!-- Order summary -->
+        <div>
+          <div class="card checkout-summary checkout-plan-summary">
+            <h3>Order Summary</h3>
+            <div class="summary-plan">
+              <div class="summary-plan-header">
+                <div>
+                  <div class="caption text-muted" style="margin-bottom:0.25rem;">Selected plan</div>
+                  <div class="checkout-plan-name">—</div>
+                </div>
+                <div class="checkout-plan-price">—</div>
+              </div>
+              <div class="summary-features">
+                <div class="summary-feature">Full channel access</div>
+                <div class="summary-feature">HD, FHD &amp; 4K quality</div>
+                <div class="summary-feature">24/7 support</div>
+                <div class="summary-feature">Free setup assistance</div>
+                <div class="summary-feature">Instant activation</div>
+              </div>
+            </div>
+            <div class="security-badges">
+              <div class="security-badge">🔒 SSL Secured</div>
+              <div class="security-badge">⚡ Instant setup</div>
+              <div class="security-badge">✓ No contracts</div>
+            </div>
+            <p class="caption text-dim mt-4" style="text-align:center;">By completing purchase you agree to our <a href="terms-of-service.html" style="color:var(--green);text-transform:none;letter-spacing:0;">Terms of Service</a> and <a href="refund-policy.html" style="color:var(--green);text-transform:none;letter-spacing:0;">Refund Policy</a>.</p>
+          </div>
+          <div class="card mt-4 text-center" style="padding:1.5rem;">
+            <div style="font-size:1.5rem;margin-bottom:0.5rem;">💬</div>
+            <p class="text-muted small">Need help choosing? Chat with us on WhatsApp.</p>
+            <a href="#" class="btn btn--secondary w-full mt-4" data-whatsapp>Open WhatsApp</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+<div id="footer-placeholder"></div>
+<script src="js/config.js"></script>
+<script src="js/translations.js"></script>
+<script src="js/partials.js"></script>
+<script src="js/main.js"></script>
+<script>
+  /* Payment method toggle */
+  document.querySelectorAll(".payment-method-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll(".payment-method-btn").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+    });
+  });
+  /* Credit card formatting */
+  const cardNum = document.getElementById("card-num");
+  if (cardNum) {
+    cardNum.addEventListener("input", function() {
+      this.value = this.value.replace(/\D/g, "").replace(/(.{4})/g, "$1 ").trim().slice(0,19);
+    });
+  }
+  const cardExp = document.getElementById("card-exp");
+  if (cardExp) {
+    cardExp.addEventListener("input", function() {
+      this.value = this.value.replace(/\D/g, "").replace(/^(\d{2})(\d)/, "$1 / $2").slice(0,7);
+    });
+  }
+</script>
+</body>
+</html>
