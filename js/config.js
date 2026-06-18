@@ -4,10 +4,10 @@
 
 const BRAND = {
   name:        "DOZNTV",
-  domain:      "[DOMAIN]",
+  domain:      "dozntv.com",
   tagline:     "Premium Streaming — DOZNTV",
   email:       "[SUPPORT_EMAIL]",
-  whatsapp:    "[WHATSAPP_LINK]",
+  whatsapp:    "https://wa.me/447882737006",
   instagram:   "[INSTAGRAM]",
   twitter:     "[TWITTER]",
   telegram:    "[TELEGRAM]",
