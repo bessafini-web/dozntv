@@ -746,9 +746,9 @@ select.form-control { cursor: pointer; }
 .ch-logo:hover { opacity: 1; }
 /* 3D channel logo card */
 .ch-icon {
-  width: 4.5rem;
-  height: 3rem;
-  border-radius: 0.5rem;
+  width: 2.8rem;
+  height: 1.8rem;
+  border-radius: 0.35rem;
   display: flex;
   align-items: center;
   justify-content: center;

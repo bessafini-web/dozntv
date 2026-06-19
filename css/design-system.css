@@ -61,7 +61,7 @@
   --transition-fast: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
 
   --header-h:        4.5rem;
-  --ticker-h:        5rem;
+  --ticker-h:        3rem;
   --container:       80rem;
 }
 
