@@ -8,107 +8,107 @@ const TICKER_HTML = `
   <div class="ticker-fade ticker-fade--right" aria-hidden="true"></div>
   <div class="ticker-track">
     <div class="ticker-inner">
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/nat-geo.png" alt="Nat Geo"></span><span class="ch-name">Nat Geo</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/bein-sports.png" alt="beIN Sports"></span><span class="ch-name">beIN Sports</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/amc.png" alt="AMC"></span><span class="ch-name">AMC</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/abc.png" alt="ABC"></span><span class="ch-name">ABC</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/a-and-e.png" alt="A&amp;E"></span><span class="ch-name">A&amp;E</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/eurosport.png" alt="Eurosport"></span><span class="ch-name">Eurosport</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/disney-plus.png" alt="Disney+"></span><span class="ch-name">Disney+</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/prime-video.png" alt="Prime Video"></span><span class="ch-name">Prime Video</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/bbc-news.png" alt="BBC News"></span><span class="ch-name">BBC News</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/dazn.png" alt="DAZN"></span><span class="ch-name">DAZN</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/netflix.png" alt="Netflix"></span><span class="ch-name">Netflix</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/hbo.png" alt="HBO"></span><span class="ch-name">HBO</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/espn.png" alt="ESPN"></span><span class="ch-name">ESPN</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/sky-sports.png" alt="Sky Sports"></span><span class="ch-name">Sky Sports</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/fox-sports.png" alt="Fox Sports"></span><span class="ch-name">Fox Sports</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/canal-plus.png" alt="Canal+"></span><span class="ch-name">Canal+</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/mbc.png" alt="MBC"></span><span class="ch-name">MBC</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/al-jazeera.png" alt="Al Jazeera"></span><span class="ch-name">Al Jazeera</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/cnn.png" alt="CNN"></span><span class="ch-name">CNN</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/discovery.png" alt="Discovery"></span><span class="ch-name">Discovery</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/cartoon-network.png" alt="Cartoon Network"></span><span class="ch-name">Cartoon Network</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/mtv.png" alt="MTV"></span><span class="ch-name">MTV</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/paramount-plus.png" alt="Paramount+"></span><span class="ch-name">Paramount+</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/tnt.png" alt="TNT"></span><span class="ch-name">TNT</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/showtime.png" alt="Showtime"></span><span class="ch-name">Showtime</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/fx.png" alt="FX"></span><span class="ch-name">FX</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/sport1.png" alt="Sport 1"></span><span class="ch-name">Sport 1</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/rmc-sport.png" alt="RMC Sport"></span><span class="ch-name">RMC Sport</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/nbc.png" alt="NBC"></span><span class="ch-name">NBC</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/cbs.png" alt="CBS"></span><span class="ch-name">CBS</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/history.png" alt="History"></span><span class="ch-name">History</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/animal-planet.png" alt="Animal Planet"></span><span class="ch-name">Animal Planet</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/tlc.png" alt="TLC"></span><span class="ch-name">TLC</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/comedy-central.png" alt="Comedy Central"></span><span class="ch-name">Comedy Central</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/syfy.png" alt="Syfy"></span><span class="ch-name">Syfy</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/bt-sport.png" alt="BT Sport"></span><span class="ch-name">BT Sport</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/osn.png" alt="OSN"></span><span class="ch-name">OSN</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/tv5-monde.png" alt="TV5 Monde"></span><span class="ch-name">TV5 Monde</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/rai.png" alt="RAI"></span><span class="ch-name">RAI</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/tf1.png" alt="TF1"></span><span class="ch-name">TF1</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/france24.png" alt="France 24"></span><span class="ch-name">France 24</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/ard.png" alt="ARD"></span><span class="ch-name">ARD</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/antena3.png" alt="Antena 3"></span><span class="ch-name">Antena 3</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/bein-sports-2.png" alt="beIN Sports 2"></span><span class="ch-name">beIN Sports 2</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/e-entertainment.png" alt="E!"></span><span class="ch-name">E! Entertainment</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/food-network.png" alt="Food Network"></span><span class="ch-name">Food Network</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/hgtv.png" alt="HGTV"></span><span class="ch-name">HGTV</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/bravo.png" alt="Bravo"></span><span class="ch-name">Bravo</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/telemundo.png" alt="Telemundo"></span><span class="ch-name">Telemundo</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/univision.png" alt="Univision"></span><span class="ch-name">Univision</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/nat-geo.svg" alt="Nat Geo"></span><span class="ch-name">Nat Geo</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/bein-sports.svg" alt="beIN Sports"></span><span class="ch-name">beIN Sports</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/amc.svg" alt="AMC"></span><span class="ch-name">AMC</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/abc.svg" alt="ABC"></span><span class="ch-name">ABC</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/a-and-e.svg" alt="A&amp;E"></span><span class="ch-name">A&amp;E</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/eurosport.svg" alt="Eurosport"></span><span class="ch-name">Eurosport</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/disney-plus.svg" alt="Disney+"></span><span class="ch-name">Disney+</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/prime-video.svg" alt="Prime Video"></span><span class="ch-name">Prime Video</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/bbc-news.svg" alt="BBC News"></span><span class="ch-name">BBC News</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/dazn.svg" alt="DAZN"></span><span class="ch-name">DAZN</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/netflix.svg" alt="Netflix"></span><span class="ch-name">Netflix</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/hbo.svg" alt="HBO"></span><span class="ch-name">HBO</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/espn.svg" alt="ESPN"></span><span class="ch-name">ESPN</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/sky-sports.svg" alt="Sky Sports"></span><span class="ch-name">Sky Sports</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/fox-sports.svg" alt="Fox Sports"></span><span class="ch-name">Fox Sports</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/canal-plus.svg" alt="Canal+"></span><span class="ch-name">Canal+</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/mbc.svg" alt="MBC"></span><span class="ch-name">MBC</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/al-jazeera.svg" alt="Al Jazeera"></span><span class="ch-name">Al Jazeera</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/cnn.svg" alt="CNN"></span><span class="ch-name">CNN</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/discovery.svg" alt="Discovery"></span><span class="ch-name">Discovery</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/cartoon-network.svg" alt="Cartoon Network"></span><span class="ch-name">Cartoon Network</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/mtv.svg" alt="MTV"></span><span class="ch-name">MTV</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/paramount-plus.svg" alt="Paramount+"></span><span class="ch-name">Paramount+</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/tnt.svg" alt="TNT"></span><span class="ch-name">TNT</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/showtime.svg" alt="Showtime"></span><span class="ch-name">Showtime</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/fx.svg" alt="FX"></span><span class="ch-name">FX</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/sport1.svg" alt="Sport 1"></span><span class="ch-name">Sport 1</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/rmc-sport.svg" alt="RMC Sport"></span><span class="ch-name">RMC Sport</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/nbc.svg" alt="NBC"></span><span class="ch-name">NBC</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/cbs.svg" alt="CBS"></span><span class="ch-name">CBS</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/history.svg" alt="History"></span><span class="ch-name">History</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/animal-planet.svg" alt="Animal Planet"></span><span class="ch-name">Animal Planet</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/tlc.svg" alt="TLC"></span><span class="ch-name">TLC</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/comedy-central.svg" alt="Comedy Central"></span><span class="ch-name">Comedy Central</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/syfy.svg" alt="Syfy"></span><span class="ch-name">Syfy</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/bt-sport.svg" alt="BT Sport"></span><span class="ch-name">BT Sport</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/osn.svg" alt="OSN"></span><span class="ch-name">OSN</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/tv5-monde.svg" alt="TV5 Monde"></span><span class="ch-name">TV5 Monde</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/rai.svg" alt="RAI"></span><span class="ch-name">RAI</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/tf1.svg" alt="TF1"></span><span class="ch-name">TF1</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/france24.svg" alt="France 24"></span><span class="ch-name">France 24</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/ard.svg" alt="ARD"></span><span class="ch-name">ARD</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/antena3.svg" alt="Antena 3"></span><span class="ch-name">Antena 3</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/bein-sports-2.svg" alt="beIN Sports 2"></span><span class="ch-name">beIN Sports 2</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/e-entertainment.svg" alt="E!"></span><span class="ch-name">E! Entertainment</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/food-network.svg" alt="Food Network"></span><span class="ch-name">Food Network</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/hgtv.svg" alt="HGTV"></span><span class="ch-name">HGTV</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/bravo.svg" alt="Bravo"></span><span class="ch-name">Bravo</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/telemundo.svg" alt="Telemundo"></span><span class="ch-name">Telemundo</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/univision.svg" alt="Univision"></span><span class="ch-name">Univision</span></span>
       <!-- duplicate set for seamless loop -->
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/nat-geo.png" alt="Nat Geo"></span><span class="ch-name">Nat Geo</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/bein-sports.png" alt="beIN Sports"></span><span class="ch-name">beIN Sports</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/amc.png" alt="AMC"></span><span class="ch-name">AMC</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/abc.png" alt="ABC"></span><span class="ch-name">ABC</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/a-and-e.png" alt="A&amp;E"></span><span class="ch-name">A&amp;E</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/eurosport.png" alt="Eurosport"></span><span class="ch-name">Eurosport</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/disney-plus.png" alt="Disney+"></span><span class="ch-name">Disney+</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/prime-video.png" alt="Prime Video"></span><span class="ch-name">Prime Video</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/bbc-news.png" alt="BBC News"></span><span class="ch-name">BBC News</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/dazn.png" alt="DAZN"></span><span class="ch-name">DAZN</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/netflix.png" alt="Netflix"></span><span class="ch-name">Netflix</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/hbo.png" alt="HBO"></span><span class="ch-name">HBO</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/espn.png" alt="ESPN"></span><span class="ch-name">ESPN</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/sky-sports.png" alt="Sky Sports"></span><span class="ch-name">Sky Sports</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/fox-sports.png" alt="Fox Sports"></span><span class="ch-name">Fox Sports</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/canal-plus.png" alt="Canal+"></span><span class="ch-name">Canal+</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/mbc.png" alt="MBC"></span><span class="ch-name">MBC</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/al-jazeera.png" alt="Al Jazeera"></span><span class="ch-name">Al Jazeera</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/cnn.png" alt="CNN"></span><span class="ch-name">CNN</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/discovery.png" alt="Discovery"></span><span class="ch-name">Discovery</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/cartoon-network.png" alt="Cartoon Network"></span><span class="ch-name">Cartoon Network</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/mtv.png" alt="MTV"></span><span class="ch-name">MTV</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/paramount-plus.png" alt="Paramount+"></span><span class="ch-name">Paramount+</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/tnt.png" alt="TNT"></span><span class="ch-name">TNT</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/showtime.png" alt="Showtime"></span><span class="ch-name">Showtime</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/fx.png" alt="FX"></span><span class="ch-name">FX</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/sport1.png" alt="Sport 1"></span><span class="ch-name">Sport 1</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/rmc-sport.png" alt="RMC Sport"></span><span class="ch-name">RMC Sport</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/nbc.png" alt="NBC"></span><span class="ch-name">NBC</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/cbs.png" alt="CBS"></span><span class="ch-name">CBS</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/history.png" alt="History"></span><span class="ch-name">History</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/animal-planet.png" alt="Animal Planet"></span><span class="ch-name">Animal Planet</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/tlc.png" alt="TLC"></span><span class="ch-name">TLC</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/comedy-central.png" alt="Comedy Central"></span><span class="ch-name">Comedy Central</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/syfy.png" alt="Syfy"></span><span class="ch-name">Syfy</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/bt-sport.png" alt="BT Sport"></span><span class="ch-name">BT Sport</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/osn.png" alt="OSN"></span><span class="ch-name">OSN</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/tv5-monde.png" alt="TV5 Monde"></span><span class="ch-name">TV5 Monde</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/rai.png" alt="RAI"></span><span class="ch-name">RAI</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/tf1.png" alt="TF1"></span><span class="ch-name">TF1</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/france24.png" alt="France 24"></span><span class="ch-name">France 24</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/ard.png" alt="ARD"></span><span class="ch-name">ARD</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/antena3.png" alt="Antena 3"></span><span class="ch-name">Antena 3</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/bein-sports-2.png" alt="beIN Sports 2"></span><span class="ch-name">beIN Sports 2</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/e-entertainment.png" alt="E!"></span><span class="ch-name">E! Entertainment</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/food-network.png" alt="Food Network"></span><span class="ch-name">Food Network</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/hgtv.png" alt="HGTV"></span><span class="ch-name">HGTV</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/bravo.png" alt="Bravo"></span><span class="ch-name">Bravo</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/telemundo.png" alt="Telemundo"></span><span class="ch-name">Telemundo</span></span>
-      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/univision.png" alt="Univision"></span><span class="ch-name">Univision</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/nat-geo.svg" alt="Nat Geo"></span><span class="ch-name">Nat Geo</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/bein-sports.svg" alt="beIN Sports"></span><span class="ch-name">beIN Sports</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/amc.svg" alt="AMC"></span><span class="ch-name">AMC</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/abc.svg" alt="ABC"></span><span class="ch-name">ABC</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/a-and-e.svg" alt="A&amp;E"></span><span class="ch-name">A&amp;E</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/eurosport.svg" alt="Eurosport"></span><span class="ch-name">Eurosport</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/disney-plus.svg" alt="Disney+"></span><span class="ch-name">Disney+</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/prime-video.svg" alt="Prime Video"></span><span class="ch-name">Prime Video</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/bbc-news.svg" alt="BBC News"></span><span class="ch-name">BBC News</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/dazn.svg" alt="DAZN"></span><span class="ch-name">DAZN</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/netflix.svg" alt="Netflix"></span><span class="ch-name">Netflix</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/hbo.svg" alt="HBO"></span><span class="ch-name">HBO</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/espn.svg" alt="ESPN"></span><span class="ch-name">ESPN</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/sky-sports.svg" alt="Sky Sports"></span><span class="ch-name">Sky Sports</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/fox-sports.svg" alt="Fox Sports"></span><span class="ch-name">Fox Sports</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/canal-plus.svg" alt="Canal+"></span><span class="ch-name">Canal+</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/mbc.svg" alt="MBC"></span><span class="ch-name">MBC</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/al-jazeera.svg" alt="Al Jazeera"></span><span class="ch-name">Al Jazeera</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/cnn.svg" alt="CNN"></span><span class="ch-name">CNN</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/discovery.svg" alt="Discovery"></span><span class="ch-name">Discovery</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/cartoon-network.svg" alt="Cartoon Network"></span><span class="ch-name">Cartoon Network</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/mtv.svg" alt="MTV"></span><span class="ch-name">MTV</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/paramount-plus.svg" alt="Paramount+"></span><span class="ch-name">Paramount+</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/tnt.svg" alt="TNT"></span><span class="ch-name">TNT</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/showtime.svg" alt="Showtime"></span><span class="ch-name">Showtime</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/fx.svg" alt="FX"></span><span class="ch-name">FX</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/sport1.svg" alt="Sport 1"></span><span class="ch-name">Sport 1</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/rmc-sport.svg" alt="RMC Sport"></span><span class="ch-name">RMC Sport</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/nbc.svg" alt="NBC"></span><span class="ch-name">NBC</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/cbs.svg" alt="CBS"></span><span class="ch-name">CBS</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/history.svg" alt="History"></span><span class="ch-name">History</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/animal-planet.svg" alt="Animal Planet"></span><span class="ch-name">Animal Planet</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/tlc.svg" alt="TLC"></span><span class="ch-name">TLC</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/comedy-central.svg" alt="Comedy Central"></span><span class="ch-name">Comedy Central</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/syfy.svg" alt="Syfy"></span><span class="ch-name">Syfy</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/bt-sport.svg" alt="BT Sport"></span><span class="ch-name">BT Sport</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/osn.svg" alt="OSN"></span><span class="ch-name">OSN</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/tv5-monde.svg" alt="TV5 Monde"></span><span class="ch-name">TV5 Monde</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/rai.svg" alt="RAI"></span><span class="ch-name">RAI</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/tf1.svg" alt="TF1"></span><span class="ch-name">TF1</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/france24.svg" alt="France 24"></span><span class="ch-name">France 24</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/ard.svg" alt="ARD"></span><span class="ch-name">ARD</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/antena3.svg" alt="Antena 3"></span><span class="ch-name">Antena 3</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/bein-sports-2.svg" alt="beIN Sports 2"></span><span class="ch-name">beIN Sports 2</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/e-entertainment.svg" alt="E!"></span><span class="ch-name">E! Entertainment</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/food-network.svg" alt="Food Network"></span><span class="ch-name">Food Network</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/hgtv.svg" alt="HGTV"></span><span class="ch-name">HGTV</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/bravo.svg" alt="Bravo"></span><span class="ch-name">Bravo</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/telemundo.svg" alt="Telemundo"></span><span class="ch-name">Telemundo</span></span>
+      <span class="ch-logo"><span class="ch-icon"><img src="img/channels/univision.svg" alt="Univision"></span><span class="ch-name">Univision</span></span>
     </div>
     </div>
     </div>
