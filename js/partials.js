@@ -183,7 +183,7 @@ const FOOTER_HTML = `
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="index.html" class="logo"><div class="logo-icon" aria-hidden="true">▶</div><span data-brand>[BRAND_NAME]</span></a>
+        <a href="index.html" class="logo"><div class="logo-icon" aria-hidden="true">▶</div><span data-brand>DOZNTV</span></a>
         <p class="footer-desc mt-4" data-i18n="footer_desc">Premium streaming experience for everyone. Quality, stability, and support you can count on.</p>
         <div class="footer-social-links mt-6">
           <a href="#" class="social-icon-btn" data-whatsapp aria-label="WhatsApp">💬</a>
@@ -235,7 +235,7 @@ const FOOTER_HTML = `
   <div class="divider"></div>
   <div class="container">
     <div class="footer-bottom">
-      <p class="footer-copy">© <span class="current-year"></span> <span data-brand>[BRAND_NAME]</span>. <span data-i18n="footer_copy">All rights reserved.</span></p>
+      <p class="footer-copy">© <span class="current-year"></span> <span data-brand>DOZNTV</span>. <span data-i18n="footer_copy">All rights reserved.</span></p>
       <div class="footer-payment-icons" aria-label="Accepted payment methods">
         <span class="payment-icon">VISA</span>
         <span class="payment-icon">MC</span>
