@@ -49,10 +49,8 @@ h1,h2,h3{font-weight:700;line-height:1.2;letter-spacing:-.02em}
 
 .nav{position:fixed;top:0;left:0;right:0;height:var(--nav-h);display:flex;align-items:center;z-index:1000;background:rgba(10,14,23,.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);box-shadow:0 1px 0 var(--brd)}
 .nav__in{display:flex;align-items:center;justify-content:space-between;width:100%;max-width:var(--mw);margin:0 auto;padding:0 var(--pad)}
-.nav__logo{display:flex;flex-direction:column;align-items:center;gap:3px;z-index:1001}
-.nav__logo img{height:52px;width:auto}
-.nav__logo-dot{width:6px;height:6px;border-radius:50%;background:var(--pri,#00b4ff);box-shadow:0 0 8px rgba(0,180,255,.6)}
-.nav__logo-text{font-size:.6rem;font-weight:600;letter-spacing:.25em;text-transform:uppercase;color:var(--txt2,#aaa);line-height:1}
+.nav__logo{display:flex;align-items:center;z-index:1001}
+.nav__logo img{height:48px;width:auto}
 .nav__back{display:inline-flex;align-items:center;gap:8px;font-size:.875rem;font-weight:500;color:var(--txt2);padding:8px 20px;border-radius:var(--r-pill);border:1px solid var(--brd);transition:all var(--tr);min-height:40px}
 .nav__back:hover{border-color:var(--pri);color:var(--pri)}
 
@@ -125,8 +123,6 @@ h1,h2,h3{font-weight:700;line-height:1.2;letter-spacing:-.02em}
   <div class="nav__in">
     <a href="index.html" class="nav__logo" aria-label="DOZN TV Home">
       <img src="logo-dozntv.png" alt="DOZN TV">
-      <span class="nav__logo-dot"></span>
-      <span class="nav__logo-text">DOZNTV</span>
     </a>
     <a href="index.html" class="nav__back"><i data-lucide="arrow-left" style="width:16px;height:16px"></i> Back to Home</a>
   </div>

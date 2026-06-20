@@ -110,10 +110,8 @@ a,button{pointer-events:auto!important;cursor:pointer}
 .nav{position:fixed;top:0;left:0;right:0;height:var(--nav-h);display:flex;align-items:center;z-index:1000;transition:background var(--tr),box-shadow var(--tr)}
 .nav--s{background:rgba(10,14,23,.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);box-shadow:0 1px 0 var(--brd)}
 .nav__in{display:flex;align-items:center;justify-content:space-between;width:100%;max-width:var(--mw);margin:0 auto;padding:0 var(--pad)}
-.nav__logo{display:flex;flex-direction:column;align-items:center;gap:3px;z-index:1001}
-.nav__logo svg,.nav__logo img{height:52px;width:auto;display:block}
-.nav__logo-dot{width:6px;height:6px;border-radius:50%;background:var(--pri,#00b4ff);box-shadow:0 0 8px rgba(0,180,255,.6)}
-.nav__logo-text{font-size:.6rem;font-weight:600;letter-spacing:.25em;text-transform:uppercase;color:var(--txt2,#aaa);line-height:1}
+.nav__logo{display:flex;align-items:center;z-index:1001}
+.nav__logo svg,.nav__logo img{height:48px;width:auto;display:block}
 .nav__links{display:flex;align-items:center;gap:var(--sp8)}
 .nav__link{font-size:var(--fs-sm);font-weight:500;color:var(--txt2);transition:color var(--tr);position:relative;padding:var(--sp1) 0}
 .nav__link::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--pri);border-radius:1px;transition:width var(--tr)}
@@ -418,10 +416,8 @@ a,button{pointer-events:auto!important;cursor:pointer}
     <a href="#" class="nav__logo" aria-label="DOZN TV Home">
       <picture>
         <source srcset="logo-dozntv.webp 1x, logo-dozntv@2x.webp 2x" type="image/webp">
-        <img src="logo-dozntv.png" srcset="logo-dozntv@2x.png 2x" alt="DOZN TV" width="160" height="52">
+        <img src="logo-dozntv.png" srcset="logo-dozntv@2x.png 2x" alt="DOZN TV" width="160" height="48">
       </picture>
-      <span class="nav__logo-dot"></span>
-      <span class="nav__logo-text">DOZNTV</span>
     </a>
     <nav class="nav__links" role="navigation" aria-label="Main navigation">
       <a href="#features" class="nav__link nav__link--on">Features</a>
@@ -887,10 +883,8 @@ a,button{pointer-events:auto!important;cursor:pointer}
         <a href="#" class="nav__logo" aria-label="DOZN TV">
           <picture>
             <source srcset="logo-dozntv.webp 1x, logo-dozntv@2x.webp 2x" type="image/webp">
-            <img src="logo-dozntv.png" srcset="logo-dozntv@2x.png 2x" alt="DOZN TV" width="140" height="52" loading="lazy">
+            <img src="logo-dozntv.png" srcset="logo-dozntv@2x.png 2x" alt="DOZN TV" width="140" height="48" loading="lazy">
           </picture>
-          <span class="nav__logo-dot"></span>
-          <span class="nav__logo-text">DOZNTV</span>
         </a>
         <p class="ft__desc">Your premium streaming experience. 18,000+ live channels and 60,000+ VOD in 4K on any device.</p>
         <div class="ft__soc">
