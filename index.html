@@ -46,6 +46,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" type="image/webp" href="hero-dozntv.webp">
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
@@ -413,7 +414,10 @@ a,button{pointer-events:auto!important;cursor:pointer}
 <header class="nav" id="nav" role="banner">
   <div class="nav__in">
     <a href="#" class="nav__logo" aria-label="DOZN TV Home">
-      <img src="logo-dozntv.png" srcset="logo-dozntv@2x.png 2x" alt="DOZN TV" width="160" height="44">
+      <picture>
+        <source srcset="logo-dozntv.webp 1x, logo-dozntv@2x.webp 2x" type="image/webp">
+        <img src="logo-dozntv.png" srcset="logo-dozntv@2x.png 2x" alt="DOZN TV" width="160" height="44">
+      </picture>
     </a>
     <nav class="nav__links" role="navigation" aria-label="Main navigation">
       <a href="#features" class="nav__link nav__link--on">Features</a>
@@ -877,7 +881,10 @@ a,button{pointer-events:auto!important;cursor:pointer}
     <div class="ft__grid">
       <div>
         <a href="#" class="nav__logo" aria-label="DOZN TV">
-          <img src="logo-dozntv.png" srcset="logo-dozntv@2x.png 2x" alt="DOZN TV" width="140" height="38" loading="lazy">
+          <picture>
+            <source srcset="logo-dozntv.webp 1x, logo-dozntv@2x.webp 2x" type="image/webp">
+            <img src="logo-dozntv.png" srcset="logo-dozntv@2x.png 2x" alt="DOZN TV" width="140" height="38" loading="lazy">
+          </picture>
         </a>
         <p class="ft__desc">Your premium streaming experience. 18,000+ live channels and 60,000+ VOD in 4K on any device.</p>
         <div class="ft__soc">
@@ -919,7 +926,7 @@ var ss=document.querySelectorAll('section[id]'),nl=document.querySelectorAll('.n
 window.addEventListener('scroll',function(){var s=scrollY+200;ss.forEach(function(sec){if(s>=sec.offsetTop&&s<sec.offsetTop+sec.offsetHeight){var id=sec.id;nl.forEach(function(l){l.classList.toggle('nav__link--on',l.getAttribute('href')==='#'+id)})}})},{passive:true});
 }
 
-function initPts(){var c=document.getElementById('pts');if(!c)return;for(var i=0;i<25;i++){var p=document.createElement('div');p.className='pt';p.style.left=Math.random()*100+'%';p.style.animationDuration=(Math.random()*8+6)+'s';p.style.animationDelay=(Math.random()*6)+'s';var s=Math.random()*3+1;p.style.width=p.style.height=s+'px';c.appendChild(p)}}
+function initPts(){var c=document.getElementById('pts');if(!c)return;for(var i=0;i<10;i++){var p=document.createElement('div');p.className='pt';p.style.left=Math.random()*100+'%';p.style.animationDuration=(Math.random()*8+6)+'s';p.style.animationDelay=(Math.random()*6)+'s';var s=Math.random()*3+1;p.style.width=p.style.height=s+'px';c.appendChild(p)}}
 
 function initAO(){var e=document.querySelectorAll('.ao');if(!('IntersectionObserver' in window)){e.forEach(function(el){el.classList.add('ao--v')});return}var o=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('ao--v');o.unobserve(e.target)}})},{threshold:.1,rootMargin:'0px 0px -40px 0px'});e.forEach(function(el,i){el.style.transitionDelay=(i%3)*.1+'s';o.observe(el)})}
 
