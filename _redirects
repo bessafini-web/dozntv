@@ -1,0 +1,10 @@
+# Cloudflare Pages handles HTTPS automatically
+# www to non-www redirect (configure in Cloudflare DNS, not here)
+
+# Clean URLs — remove .html extension
+/privacy  /privacy.html  200
+/terms    /terms.html    200
+/refund   /refund.html   200
+/cookies  /cookies.html  200
+/reseller /reseller.html 200
+/contact  /contact.html  200
