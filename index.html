@@ -967,6 +967,33 @@ function initFAQ(){document.querySelectorAll('.faq-i').forEach(function(it){it.q
 function initBtt(){var b=document.getElementById('btt');addEventListener('scroll',function(){b.classList.toggle('btt--v',scrollY>500)},{passive:true});b.addEventListener('click',function(){scrollTo({top:0,behavior:'smooth'})})}
 
 function initCk(){var b=document.getElementById('ck');if(!localStorage.getItem('dozn-ck'))setTimeout(function(){b.classList.add('ck--v')},2000);document.getElementById('ckY').addEventListener('click',function(){localStorage.setItem('dozn-ck','1');b.classList.remove('ck--v')});document.getElementById('ckN').addEventListener('click',function(){localStorage.setItem('dozn-ck','0');b.classList.remove('ck--v')})}
+
+// Source protection
+(function(){
+  // Disable right-click
+  document.addEventListener('contextmenu',function(e){e.preventDefault()});
+  // Disable keyboard shortcuts
+  document.addEventListener('keydown',function(e){
+    // F12
+    if(e.key==='F12'){e.preventDefault();return false}
+    // Ctrl+Shift+I (DevTools)
+    if(e.ctrlKey&&e.shiftKey&&e.key==='I'){e.preventDefault();return false}
+    // Ctrl+Shift+J (Console)
+    if(e.ctrlKey&&e.shiftKey&&e.key==='J'){e.preventDefault();return false}
+    // Ctrl+Shift+C (Inspector)
+    if(e.ctrlKey&&e.shiftKey&&e.key==='C'){e.preventDefault();return false}
+    // Ctrl+U (View Source)
+    if(e.ctrlKey&&e.key==='u'){e.preventDefault();return false}
+    // Ctrl+S (Save Page)
+    if(e.ctrlKey&&e.key==='s'){e.preventDefault();return false}
+  });
+  // Disable text selection via CSS
+  document.body.style.userSelect='none';
+  document.body.style.webkitUserSelect='none';
+  // Detect DevTools open
+  var dt=new Image();Object.defineProperty(dt,'id',{get:function(){document.body.innerHTML='<div style="display:flex;align-items:center;justify-content:center;height:100vh;background:#0a0e17;color:#fff;font-family:Inter,sans-serif;font-size:1.5rem;text-align:center;padding:2rem">Access Denied</div>'}});
+  setInterval(function(){console.log(dt);console.clear()},2000);
+})();
 </script>
 </body>
 </html>
