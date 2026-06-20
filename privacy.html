@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — DOZN TV</title>
+<meta name="description" content="DOZN TV Privacy Policy. Learn how we collect, use, and protect your personal information.">
+<link rel="canonical" href="https://dozntv.pages.dev/privacy.html">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%236C5CE7'/%3E%3Cstop offset='1' stop-color='%23FF6B6B'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='url(%23g)'/%3E%3Cpolygon points='12,8 24,16 12,24' fill='white'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest" defer></script>
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:16px;line-height:1.6;color:#F0F6FC;background:#0a0e17;-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit;transition:color .3s}
+ul,ol{list-style:none}
+button{font-family:inherit;border:none;outline:none;background:none;cursor:pointer}
+img{max-width:100%;display:block}
+
+:root{--pri:#6C5CE7;--pri-rgb:108,92,231;--acc:#FF6B6B;--bg:#0a0e17;--sf:#131a27;--sf2:#1a2332;--txt:#F0F6FC;--txt2:#8B949E;--txt3:#5a6370;--brd:rgba(255,255,255,.06);--brd2:rgba(255,255,255,.12);--r-sm:8px;--r-md:12px;--r-pill:50px;--tr:.3s ease;--nav-h:72px;--mw:1200px;--pad:1.5rem}
+:focus-visible{outline:2px solid var(--pri);outline-offset:2px}
+h1,h2,h3{font-weight:700;line-height:1.2;letter-spacing:-.02em}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;height:var(--nav-h);display:flex;align-items:center;z-index:1000;background:rgba(10,14,23,.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);box-shadow:0 1px 0 var(--brd)}
+.nav__in{display:flex;align-items:center;justify-content:space-between;width:100%;max-width:var(--mw);margin:0 auto;padding:0 var(--pad)}
+.nav__logo{display:flex;align-items:center;z-index:1001}
+.nav__logo svg{height:38px;width:auto}
+.nav__back{display:inline-flex;align-items:center;gap:8px;font-size:.875rem;font-weight:500;color:var(--txt2);padding:8px 20px;border-radius:var(--r-pill);border:1px solid var(--brd);transition:all var(--tr);min-height:40px}
+.nav__back:hover{border-color:var(--pri);color:var(--pri)}
+
+/* HERO BANNER */
+.page-hero{padding:calc(var(--nav-h) + 80px) 0 60px;text-align:center;position:relative;overflow:hidden}
+.page-hero__bg{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(var(--pri-rgb),.1),transparent 60%)}
+.page-hero__icon{width:72px;height:72px;background:rgba(var(--pri-rgb),.08);border:1px solid rgba(var(--pri-rgb),.15);border-radius:var(--r-md);display:flex;align-items:center;justify-content:center;margin:0 auto 24px;color:var(--pri)}
+.page-hero h1{font-size:2.25rem;margin-bottom:12px}
+.page-hero p{font-size:1.125rem;color:var(--txt2);max-width:560px;margin:0 auto}
+.page-hero__updated{font-size:.75rem;color:var(--txt3);margin-top:16px}
+
+/* CONTENT */
+.content{max-width:780px;margin:0 auto;padding:0 var(--pad) 96px}
+.content h2{font-size:1.5rem;margin:48px 0 16px;color:var(--txt);position:relative;padding-left:20px}
+.content h2::before{content:'';position:absolute;left:0;top:4px;width:4px;height:24px;background:var(--pri);border-radius:2px}
+.content h3{font-size:1.125rem;margin:32px 0 12px;color:var(--txt)}
+.content p{color:var(--txt2);margin-bottom:16px;line-height:1.8}
+.content ul{margin:0 0 16px 0}
+.content li{color:var(--txt2);padding:6px 0 6px 28px;position:relative;line-height:1.7}
+.content li::before{content:'';position:absolute;left:8px;top:14px;width:6px;height:6px;border-radius:50%;background:var(--pri)}
+.content strong{color:var(--txt);font-weight:600}
+.content a{color:var(--pri);text-decoration:underline;text-underline-offset:2px}
+.content a:hover{color:var(--acc)}
+
+/* INFO CARD */
+.info-card{background:var(--sf);border:1px solid var(--brd);border-radius:var(--r-md);padding:24px 28px;margin:32px 0;display:flex;gap:16px;align-items:flex-start}
+.info-card__icon{width:40px;height:40px;border-radius:var(--r-sm);background:rgba(var(--pri-rgb),.08);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--pri)}
+.info-card__text{font-size:.875rem;color:var(--txt2);line-height:1.7}
+.info-card__text strong{color:var(--txt)}
+
+/* FOOTER */
+.ft{background:var(--sf);border-top:1px solid var(--brd);padding:48px 0 24px}
+.ft__in{max-width:var(--mw);margin:0 auto;padding:0 var(--pad);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+.ft__c{font-size:.75rem;color:var(--txt3)}
+.ft__links{display:flex;gap:24px}
+.ft__links a{font-size:.75rem;color:var(--txt3);transition:color var(--tr)}.ft__links a:hover{color:var(--txt)}
+
+@media(max-width:640px){
+  .page-hero h1{font-size:1.875rem}
+  .info-card{flex-direction:column}
+  .ft__in{flex-direction:column;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav__in">
+    <a href="index.html" class="nav__logo" aria-label="DOZN TV Home">
+      <img src="logo-dozntv.png" alt="DOZN TV" style="height:42px;width:auto">
+    </a>
+    <a href="index.html" class="nav__back"><i data-lucide="arrow-left" style="width:16px;height:16px"></i> Back to Home</a>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="page-hero__bg" aria-hidden="true"></div>
+  <div class="page-hero__icon"><i data-lucide="shield" style="width:32px;height:32px"></i></div>
+  <h1>Privacy Policy</h1>
+  <p>Your privacy matters to us. This policy explains how DOZN TV collects, uses, and protects your personal data.</p>
+  <div class="page-hero__updated">Last updated: January 15, 2024</div>
+</section>
+
+<main class="content">
+
+  <div class="info-card">
+    <div class="info-card__icon"><i data-lucide="info" style="width:20px;height:20px"></i></div>
+    <div class="info-card__text"><strong>Summary:</strong> We collect minimal data needed to provide our streaming service. We never sell your personal information to third parties. You have full control over your data at any time.</div>
+  </div>
+
+  <h2>1. Information We Collect</h2>
+  <h3>Personal Information</h3>
+  <p>When you create an account or subscribe to our services, we may collect:</p>
+  <ul>
+    <li>Full name and email address</li>
+    <li>Payment information (processed securely via third-party payment providers)</li>
+    <li>IP address and device information for service delivery</li>
+    <li>Communication preferences</li>
+  </ul>
+
+  <h3>Usage Data</h3>
+  <p>We automatically collect certain information when you use our service:</p>
+  <ul>
+    <li>Device type, operating system, and browser information</li>
+    <li>Viewing activity and preferences to improve recommendations</li>
+    <li>Connection timestamps and session duration</li>
+    <li>Technical logs for troubleshooting and service improvement</li>
+  </ul>
+
+  <h2>2. How We Use Your Information</h2>
+  <p>We use the collected information for the following purposes:</p>
+  <ul>
+    <li><strong>Service Delivery:</strong> To provide, maintain, and improve our IPTV streaming service</li>
+    <li><strong>Account Management:</strong> To manage your subscription, process payments, and send service-related communications</li>
+    <li><strong>Customer Support:</strong> To respond to your inquiries and resolve technical issues</li>
+    <li><strong>Service Improvement:</strong> To analyze usage patterns and optimize streaming quality and content selection</li>
+    <li><strong>Security:</strong> To detect and prevent fraudulent activity and unauthorized access</li>
+  </ul>
+
+  <h2>3. Data Sharing & Third Parties</h2>
+  <p>We do not sell, trade, or rent your personal information to third parties. We may share your data only in the following circumstances:</p>
+  <ul>
+    <li><strong>Payment Processors:</strong> To securely process your subscription payments (Stripe, PayPal)</li>
+    <li><strong>Legal Requirements:</strong> When required by law, regulation, or legal process</li>
+    <li><strong>Service Providers:</strong> With trusted partners who assist in operating our service, under strict confidentiality agreements</li>
+  </ul>
+
+  <h2>4. Data Security</h2>
+  <p>We implement industry-standard security measures to protect your personal information, including:</p>
+  <ul>
+    <li>SSL/TLS encryption for all data transmissions</li>
+    <li>Encrypted storage of sensitive information</li>
+    <li>Regular security audits and vulnerability assessments</li>
+    <li>Access controls limiting employee access to personal data</li>
+  </ul>
+
+  <h2>5. Cookies & Tracking</h2>
+  <p>We use cookies and similar technologies to enhance your browsing experience. These include:</p>
+  <ul>
+    <li><strong>Essential Cookies:</strong> Required for the website to function properly</li>
+    <li><strong>Analytics Cookies:</strong> Help us understand how visitors interact with our website</li>
+    <li><strong>Preference Cookies:</strong> Remember your settings and preferences</li>
+  </ul>
+  <p>You can manage cookie preferences through your browser settings. For more details, see our <a href="cookies.html">Cookie Policy</a>.</p>
+
+  <h2>6. Your Rights</h2>
+  <p>You have the right to:</p>
+  <ul>
+    <li>Access, update, or delete your personal information at any time</li>
+    <li>Opt out of marketing communications</li>
+    <li>Request a copy of all data we hold about you</li>
+    <li>Withdraw consent for data processing</li>
+    <li>Lodge a complaint with a data protection authority</li>
+  </ul>
+
+  <h2>7. Data Retention</h2>
+  <p>We retain your personal data only for as long as necessary to fulfill the purposes described in this policy. When your account is deleted, we remove your personal data within 30 days, except where retention is required by law.</p>
+
+  <h2>8. Children's Privacy</h2>
+  <p>Our service is not directed at children under 13 years of age. We do not knowingly collect personal information from children. If you believe a child has provided us with personal data, please contact us immediately.</p>
+
+  <h2>9. Changes to This Policy</h2>
+  <p>We may update this Privacy Policy from time to time. We will notify you of any significant changes by posting the updated policy on this page and updating the "Last updated" date. Your continued use of our service after changes are posted constitutes acceptance of the modified policy.</p>
+
+  <h2>10. Contact Us</h2>
+  <p>If you have any questions about this Privacy Policy or wish to exercise your data rights, contact us:</p>
+  <ul>
+    <li><strong>Email:</strong> <a href="mailto:support@dozntv.com">support@dozntv.com</a></li>
+    <li><strong>WhatsApp:</strong> <a href="https://wa.me/447882737006" target="_blank" rel="noopener noreferrer">Chat with us</a></li>
+  </ul>
+
+</main>
+
+<footer class="ft">
+  <div class="ft__in">
+    <p class="ft__c">&copy; 2024 DOZN TV. All rights reserved.</p>
+    <div class="ft__links">
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="refund.html">Refund</a>
+      <a href="cookies.html">Cookies</a>
+    </div>
+  </div>
+</footer>
+
+<script>document.addEventListener('DOMContentLoaded',function(){lucide.createIcons()})</script>
+</body>
+</html>

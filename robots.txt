@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /checkout.html
-
-Sitemap: https://dozntv.com/sitemap.xml
