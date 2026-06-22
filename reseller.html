@@ -51,8 +51,8 @@ h1,h2,h3{font-weight:700;line-height:1.2;letter-spacing:-.02em}
 /* NAV */
 .nav{position:fixed;top:0;left:0;right:0;height:var(--nav-h);display:flex;align-items:center;z-index:1000;background:rgba(10,14,23,.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);box-shadow:0 1px 0 var(--brd)}
 .nav__in{display:flex;align-items:center;justify-content:space-between;width:100%;max-width:var(--mw);margin:0 auto;padding:0 var(--pad)}
-.nav__logo{display:flex;align-items:center;z-index:1001}
-.nav__logo img{height:48px;width:auto}
+.nav__logo{display:flex;align-items:center;z-index:1001;overflow:hidden}
+.nav__logo img{height:48px;width:auto;object-fit:cover;object-position:top left}
 .nav__back{display:inline-flex;align-items:center;gap:8px;font-size:.875rem;font-weight:500;color:var(--txt2);padding:8px 20px;border-radius:var(--r-pill);border:1px solid var(--brd);transition:all var(--tr);min-height:40px}
 .nav__back:hover{border-color:var(--pri);color:var(--pri)}
 .con{width:100%;max-width:var(--mw);margin:0 auto;padding:0 var(--pad)}
@@ -161,7 +161,7 @@ a{pointer-events:auto!important;user-select:auto!important;-webkit-user-select:a
 <header class="nav">
   <div class="nav__in">
     <a href="index.html" class="nav__logo" aria-label="DOZN TV Home">
-      <img src="logo-dozntv.svg" alt="DOZN TV">
+      <img src="logo-dozntv.png" alt="DOZN TV">
     </a>
     <a href="index.html" class="nav__back"><i data-lucide="arrow-left" style="width:16px;height:16px"></i> Back to Home</a>
   </div>

@@ -110,8 +110,8 @@ a,button{pointer-events:auto!important;cursor:pointer}
 .nav{position:fixed;top:0;left:0;right:0;height:var(--nav-h);display:flex;align-items:center;z-index:1000;transition:background var(--tr),box-shadow var(--tr)}
 .nav--s{background:rgba(10,14,23,.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);box-shadow:0 1px 0 var(--brd)}
 .nav__in{display:flex;align-items:center;justify-content:space-between;width:100%;max-width:var(--mw);margin:0 auto;padding:0 var(--pad)}
-.nav__logo{display:flex;align-items:center;z-index:1001}
-.nav__logo svg,.nav__logo img{height:48px;width:auto;display:block}
+.nav__logo{display:flex;align-items:center;z-index:1001;overflow:hidden}
+.nav__logo svg,.nav__logo img{height:48px;width:auto;display:block;object-fit:cover;object-position:top left}
 .nav__links{display:flex;align-items:center;gap:var(--sp8)}
 .nav__link{font-size:var(--fs-sm);font-weight:500;color:var(--txt2);transition:color var(--tr);position:relative;padding:var(--sp1) 0}
 .nav__link::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--pri);border-radius:1px;transition:width var(--tr)}
@@ -414,7 +414,10 @@ a,button{pointer-events:auto!important;cursor:pointer}
 <header class="nav" id="nav" role="banner">
   <div class="nav__in">
     <a href="#" class="nav__logo" aria-label="DOZN TV Home">
-      <img src="logo-dozntv.svg" alt="DOZN TV" width="160" height="48">
+      <picture>
+        <source srcset="logo-dozntv.webp 1x, logo-dozntv@2x.webp 2x" type="image/webp">
+        <img src="logo-dozntv.png" srcset="logo-dozntv@2x.png 2x" alt="DOZN TV" width="160" height="44">
+      </picture>
     </a>
     <nav class="nav__links" role="navigation" aria-label="Main navigation">
       <a href="#features" class="nav__link nav__link--on">Features</a>
@@ -878,7 +881,10 @@ a,button{pointer-events:auto!important;cursor:pointer}
     <div class="ft__grid">
       <div>
         <a href="#" class="nav__logo" aria-label="DOZN TV">
-          <img src="logo-dozntv.svg" alt="DOZN TV" width="140" height="48" loading="lazy">
+          <picture>
+            <source srcset="logo-dozntv.webp 1x, logo-dozntv@2x.webp 2x" type="image/webp">
+            <img src="logo-dozntv.png" srcset="logo-dozntv@2x.png 2x" alt="DOZN TV" width="140" height="38" loading="lazy">
+          </picture>
         </a>
         <p class="ft__desc">Your premium streaming experience. 18,000+ live channels and 60,000+ VOD in 4K on any device.</p>
         <div class="ft__soc">
